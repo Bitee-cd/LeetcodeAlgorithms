@@ -8,3 +8,7 @@ var singleNumber = function(nums) {
      }
      return nums[0]
  }
+
+ var singleNumber = function(nums) {
+    return nums.reduce((pre,cur)=> pre ^cur);
+  };
